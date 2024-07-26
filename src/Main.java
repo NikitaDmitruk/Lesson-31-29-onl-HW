@@ -1,8 +1,6 @@
 
-import java.io.FileNotFoundException;
-
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         MatrixCollection matrixCollection = new MatrixCollection();
         matrixCollection.add(1, 0, 0);
         matrixCollection.add(1, 0, 1);
@@ -12,7 +10,7 @@ public class Main {
         matrixCollection.add(1, 2, 1);
         int counter = 0;
         for (int i : matrixCollection) {
-            System.out.print(i);
+            System.out.print(i + " ");
             counter++;
             if (counter == 5) {
                 System.out.println();
